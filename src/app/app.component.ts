@@ -9,23 +9,32 @@ declare var $:any
 })
 export class AppComponent {
   title = 'ETicaretClient';
-  constructor(private toastrService: CustomToastrService){
-    toastrService.message("Merhaba","Ahmet",{
-      messageType: ToastrMessageType.Info,
-      position: ToastrPosition.BottomCenter
-    });
-    toastrService.message("Merhaba","Ahmet",{
-      messageType: ToastrMessageType.Success,
-      position: ToastrPosition.TopCenter
-    });
-    toastrService.message("Merhaba","Ahmet",{
-      messageType: ToastrMessageType.Warning,
-      position: ToastrPosition.TopRight
-    });
-    toastrService.message("Merhaba","Ahmet",{
-      messageType: ToastrMessageType.Error,
-      position: ToastrPosition.BottomLeft
-    });
-   
-  }
+constructor(){
+
 }
+}
+$.get("https://localhost:7050//api/products",data=>{
+  console.log(data);
+})
+
+
+//   constructor(private toastrService: CustomToastrService){
+//     toastrService.message("Merhaba","Ahmet",{
+//       messageType: ToastrMessageType.Info,
+//       position: ToastrPosition.BottomCenter
+//     });
+//     toastrService.message("Merhaba","Ahmet",{
+//       messageType: ToastrMessageType.Success,
+//       position: ToastrPosition.TopCenter
+//     });
+//     toastrService.message("Merhaba","Ahmet",{
+//       messageType: ToastrMessageType.Warning,
+//       position: ToastrPosition.TopRight
+//     });
+//     toastrService.message("Merhaba","Ahmet",{
+//       messageType: ToastrMessageType.Error,
+//       position: ToastrPosition.BottomLeft
+//     });
+   
+//   }
+// }
