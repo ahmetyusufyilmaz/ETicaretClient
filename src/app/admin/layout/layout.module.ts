@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LayoutComponent } from './layout.component';
 import { ComponentsModule } from './components/components.module';
+import { RouterModule } from '@angular/router';
+import {MatSidenavModule} from '@angular/material/sidenav';
+
 
 
 
@@ -10,7 +13,7 @@ import { ComponentsModule } from './components/components.module';
     LayoutComponent
   ],
   imports: [
-    CommonModule,ComponentsModule
+    CommonModule,ComponentsModule,RouterModule,MatSidenavModule
   ],
   exports: [
     LayoutComponent
